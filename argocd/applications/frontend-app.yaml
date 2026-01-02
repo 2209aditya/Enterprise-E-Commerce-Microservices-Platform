@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: frontend
+  namespace: argocd
+spec:
+  project: ecommerce
+  source:
+    repoURL: https://github.com/YOUR_USER/ecommerce-microservices-azure
+    path: helm/frontend
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: ecommerce
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

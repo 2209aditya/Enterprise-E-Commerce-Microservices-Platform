@@ -1,0 +1,6 @@
+replicaCount: 3
+image:
+  repository: myacr.azurecr.io/frontend
+  tag: latest
+service:
+  port: 80

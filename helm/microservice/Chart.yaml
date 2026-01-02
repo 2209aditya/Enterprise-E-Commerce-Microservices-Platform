@@ -1,0 +1,4 @@
+apiVersion: v2
+name: microservice
+description: Spring Boot Microservice
+version: 1.0.0

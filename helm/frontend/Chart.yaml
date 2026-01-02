@@ -1,0 +1,4 @@
+apiVersion: v2
+name: frontend
+description: Angular Frontend
+version: 1.0.0
